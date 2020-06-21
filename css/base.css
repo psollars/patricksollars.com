@@ -1,0 +1,35 @@
+html {
+  --pale-blue: #5e91a8;
+  --pale-red: #e9554e;
+  --pale-gray: #e8e8e8;
+  --text: #222222;
+  --text-2: #3c3c3c;
+  --icon: #666666;
+  --container-background: rgba(245, 245, 245, 0.9);
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 40px;
+  --space-6: 48px;
+  font-family: "Lato", sans-serif;
+  font-variant-ligatures: none;
+}
+
+body {
+  background: var(--pale-gray);
+  background-image: url(../assets/images/header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Slab", monospace, sans-serif;
+  color: var(--text-2);
+}
