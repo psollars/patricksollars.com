@@ -6,4 +6,11 @@
     hamburger.classList.toggle("open");
     navList.classList.toggle("open");
   });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth >= 576) {
+      hamburger.classList.remove("open");
+      navList.classList.remove("open");
+    }
+  });
 })();

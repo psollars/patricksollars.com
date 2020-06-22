@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Lato Light"), local("Lato-Light"),
+    url(./../assets/fonts/Lato-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lato Regular"), local("Lato-Regular"),
+    url(./../assets/fonts/Lato-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 300;
+  src: url(./../assets/fonts/RobotoSlab-Light.ttf) local("RobotoSlab-Light")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+  src: url(./../assets/fonts/RobotoSlab-Regular.ttf) local("RobotoSlab-Regular")
+    format("truetype");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Slab", monospace, sans-serif;
+  color: var(--text-2);
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  font-variant-ligatures: none;
+  margin: 0px;
+  color: var(--text);
+  background: var(--container-background);
+  padding: var(--space-1) var(--space-2) var(--space-1) var(--space-1);
+  line-height: 1.5em;
+}
+
+p a {
+  color: var(--text);
+  text-decoration-color: var(--pale-blue);
+}
+
+p a:visited {
+  color: var(--text);
+  text-decoration-color: var(--pale-blue);
+}
+
+p a:focus,
+p a:hover {
+  color: var(--text);
+  text-decoration-color: var(--pale-red);
+}

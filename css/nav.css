@@ -1,0 +1,93 @@
+nav {
+  grid-column-start: -1;
+  grid-column-end: 1;
+  font-family: "Lato", sans-serif;
+}
+
+nav ul {
+  display: none;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: var(--space-3) var(--space-3);
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+
+  /* TODO - figure out nav transform from top transition on open */
+  transition-property: all;
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+}
+
+nav ul.open {
+  margin-top: var(--space-3);
+  display: grid;
+  row-gap: var(--space-2);
+}
+
+nav ul li a {
+  color: var(--text-2);
+  text-decoration: none;
+  font-size: 1.25em;
+  font-weight: 300;
+}
+
+nav ul li a:focus span,
+nav ul li a:hover span {
+  text-decoration: underline;
+  text-decoration-color: var(--pale-red);
+}
+
+nav ul li a i {
+  color: var(--icon);
+}
+
+nav ul li a:focus i,
+nav ul li a:hover i {
+  color: var(--pale-red);
+}
+
+nav ul li a svg {
+  height: 1.25em;
+}
+
+nav ul li a svg {
+  vertical-align: top;
+}
+
+nav ul li:nth-child(3) a svg {
+  vertical-align: bottom;
+}
+
+nav ul li:nth-child(4) a svg {
+  vertical-align: bottom;
+}
+
+nav ul li a svg path {
+  fill: var(--icon);
+}
+
+nav ul li a:focus svg path,
+nav ul li a:hover svg path {
+  fill: var(--pale-red);
+}
+
+@media only screen and (min-width: 576px) {
+  nav {
+    grid-column-start: unset;
+    grid-column-end: unset;
+  }
+
+  nav ul {
+    display: grid;
+  }
+
+  nav ul li a {
+    font-size: 1em;
+  }
+
+  nav ul li a svg {
+    height: 1em;
+  }
+}

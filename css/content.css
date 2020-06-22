@@ -1,0 +1,27 @@
+main ul {
+  padding: 0px;
+  list-style: none;
+}
+
+main ul li {
+  margin: var(--space-2) 0px;
+}
+
+main ul li a {
+  padding: 3px var(--space-1) 0px var(--space-1);
+  font-size: 1.4em;
+  text-decoration: none;
+  color: var(--text-2);
+  background-color: var(--container-background);
+  border-bottom: 3px solid var(--pale-blue);
+}
+
+main ul li a:visited {
+  color: var(--text-2);
+  border-bottom: 3px solid var(--pale-blue);
+}
+
+main ul li a:hover,
+main ul li a:focus {
+  border-bottom: 3px solid var(--pale-red);
+}

@@ -1,9 +1,8 @@
 #hamburger {
+  display: block;
   width: 52px;
   height: 39px;
   justify-self: end;
-  /* position: relative; */
-  /* margin: 50px auto; */
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -13,7 +12,12 @@
   -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   cursor: pointer;
-  display: none;
+}
+
+@media only screen and (min-width: 576px) {
+  #hamburger {
+    display: none;
+  }
 }
 
 #hamburger span {

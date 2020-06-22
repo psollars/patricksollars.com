@@ -5,10 +5,30 @@
 
 header {
   display: grid;
-  grid-template-columns: 1fr 200px;
+  grid-template-columns: 1fr 52px;
   align-items: center;
+  background-color: var(--container-background);
   margin-bottom: var(--space-2);
-  padding: 8px 24px;
+  padding: var(--space-1) var(--space-3);
+}
+
+@media only screen and (min-width: 576px) {
+  header {
+    grid-template-columns: 1fr 200px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    margin: 0px auto var(--space-2) auto;
+    width: calc(var(--breakpoint-md) - var(--space-4));
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  header {
+    width: calc(var(--breakpoint-lg) - var(--space-4));
+  }
 }
 
 h1,
@@ -17,6 +37,7 @@ h2 {
 }
 
 h1 span.first-name {
+  font-weight: 400;
   color: var(--pale-blue);
 }
 
@@ -28,70 +49,4 @@ h1 span.last-name {
 h2 {
   font-weight: 100;
   font-size: 1.35em;
-}
-
-nav ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 24px 24px;
-  align-items: center;
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-}
-
-nav ul li a {
-  color: var(--text-2);
-  text-decoration: none;
-  font-weight: 300;
-}
-
-nav ul li a:focus span,
-nav ul li a:hover span {
-  text-decoration: underline;
-  text-decoration-color: var(--pale-red);
-}
-
-nav ul li a i {
-  color: var(--icon);
-}
-
-nav ul li a:focus i,
-nav ul li a:hover i {
-  color: var(--pale-red);
-}
-
-nav ul li a svg {
-  height: 16px;
-}
-
-nav ul li a svg {
-  vertical-align: top;
-}
-
-nav ul li:nth-child(3) a svg {
-  vertical-align: bottom;
-}
-
-nav ul li:nth-child(4) a svg {
-  vertical-align: bottom;
-}
-
-nav ul li a svg path {
-  fill: var(--icon);
-}
-
-nav ul li a:focus svg path,
-nav ul li a:hover svg path {
-  fill: var(--pale-red);
-}
-
-@media only screen and (max-width: 576px) {
-  nav ul li a svg {
-    height: 20px;
-  }
-
-  nav ul li a {
-    font-size: 20px;
-  }
 }
