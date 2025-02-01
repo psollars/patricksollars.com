@@ -2,32 +2,28 @@
   font-family: "Lato";
   font-style: normal;
   font-weight: 300;
-  src: local("Lato Light"), local("Lato-Light"),
-    url(./../assets/fonts/Lato-Light.ttf) format("truetype");
+  src: url(../fonts/Lato-Light.ttf) format("truetype");
 }
 
 @font-face {
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
-  src: local("Lato Regular"), local("Lato-Regular"),
-    url(./../assets/fonts/Lato-Regular.ttf) format("truetype");
+  src: url(../fonts/Lato-Regular.ttf) format("truetype");
 }
 
 @font-face {
   font-family: "Roboto Slab";
   font-style: normal;
   font-weight: 300;
-  src: url(./../assets/fonts/RobotoSlab-Light.ttf) local("RobotoSlab-Light")
-    format("truetype");
+  src: url(../fonts/RobotoSlab-Light.ttf) format("truetype");
 }
 
 @font-face {
   font-family: "Roboto Slab";
   font-style: normal;
   font-weight: 400;
-  src: url(./../assets/fonts/RobotoSlab-Regular.ttf) local("RobotoSlab-Regular")
-    format("truetype");
+  src: url(../fonts/RobotoSlab-Regular.ttf) format("truetype");
 }
 
 h1,
